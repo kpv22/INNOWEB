@@ -128,8 +128,8 @@ const plans = [
 ];
 
 const stats = [
-  { icon: "wallet", value: "40 USD", label: "soporte mensual de referencia" },
-  { icon: "spark", value: "4 fases", label: "para salir de idea a producto" },
+  { icon: "coin", value: "40 USD", label: "soporte mensual de referencia" },
+  { icon: "bars", value: "4 fases", label: "para salir de idea a producto" },
   { icon: "target", value: "100%", label: "enfoque personalizado por cliente" }
 ];
 
@@ -166,6 +166,21 @@ function Icon({ name, className = "" }) {
         <path d="m12 4 8 4-8 4-8-4 8-4Z" />
         <path d="m4 12 8 4 8-4" />
         <path d="m4 16 8 4 8-4" />
+      </>
+    ),
+    coin: (
+      <>
+        <circle cx="12" cy="12" r="6.8" />
+        <path d="M12 8.4v7.2" />
+        <path d="M14.2 9.9c-.5-.6-1.3-1-2.2-1-1.3 0-2.2.7-2.2 1.7 0 2 4.4 1.2 4.4 3.5 0 1.1-1 1.9-2.4 1.9-.9 0-1.8-.3-2.4-.9" />
+      </>
+    ),
+    bars: (
+      <>
+        <path d="M5 18h14" />
+        <rect x="6.3" y="12.6" width="2.8" height="4.2" rx="0.8" />
+        <rect x="10.6" y="9.4" width="2.8" height="7.4" rx="0.8" />
+        <rect x="14.9" y="6.8" width="2.8" height="10" rx="0.8" />
       </>
     ),
     cart: (
